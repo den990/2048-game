@@ -9,7 +9,7 @@ function parseHighScores(){
 
 function recordHighScore(newscore){
 	$.ajax({
-		url:'http://localhost:8080',
+		url:'http://localhost:8081',
 		data: '{"hs":' + newscore + '}',
 		type:'POST',
 		success: function(data){

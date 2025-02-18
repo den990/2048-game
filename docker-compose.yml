@@ -1,0 +1,14 @@
+version: '3'
+services:
+  game1:
+    image: game:1.0.0
+    build: /
+    container_name: game1
+    ports:
+      - "8082:8081"
+
+  game2:
+    image: game:1.0.0
+    container_name: game2
+    ports:
+      - "8083:8081"
